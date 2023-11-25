@@ -25,7 +25,7 @@ while True:
 
     if time.time() - start_time > END_TIME:
         break
-    page_source = driver.page_source  # 페이지의 HTML 소스를 가져옵니다.
+    page_source = driver.page_source  
     soup = BeautifulSoup(page_source, 'lxml')
 
 data = soup.select('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > div > div.BasicLayout_mainWrapper__xXO4A > main > div > div > div > a > h4')
